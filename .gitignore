@@ -25,19 +25,10 @@
 
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
-# /public/build/
 npm-debug.log
-yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
 # ---
-
-# Compiled output
-/build
-/dist
-/documentation
-/out-tsc
-/tmp
 
 # Composer
 composer.lock
@@ -46,13 +37,9 @@ composer.lock
 /node_modules
 package-lock.json
 
-# IDEs + Editors
-*.launch
-*.sublime-workspace
+# IDEs, editors
 /.idea
 .c9
-.classpath
-.history
 .project
 .settings
 
@@ -64,13 +51,8 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
-/.sass-cache
-/connect.lock
 /coverage
-/libpeerconnection.log
-/typings
 php_errorlog
-testem.log
 
 # System files
 */*.lnk

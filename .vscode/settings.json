@@ -22,7 +22,7 @@
 	"css.validate": false,
 	"json.format.enable": true,
 	"less.validate": false,
-	"javascript.validate.enable": false,
+	"js/ts.validate.enabled": false,
 	"php.suggest.basic": false,
 	"scss.validate": false,
 	"[markdown]": {
@@ -41,12 +41,8 @@
 	},
 	"intelephense.files.exclude": [
 		"**/.git/**",
-		"**/.svn/**",
-		"**/.hg/**",
-		"**/CVS/**",
 		"**/.DS_Store/**",
 		"**/node_modules/**",
-		"**/bower_components/**",
 		"**/vendor/**/{Test,test,Tests,tests}/**/*Test.php"
 	],
 	"path-intellisense.mappings": {
