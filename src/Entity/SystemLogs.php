@@ -18,7 +18,7 @@ use function trim;
  * Intended use: Dev/Debug and monitoring purposes as alternative
  * to wasteful CLI output and the default file based logging.
  *
- * @todo INTERNAL | CHECK | Hashsum uniqueness safe and good to do this way? What should happen on failure?
+ * @todo CHECK: Hashsum uniqueness safe and good to do this way? What should happen on failure?
  * @ORM\Entity(repositoryClass="App\Repository\SystemLogsRepository")
  * @ORM\Table(name="system_logs")
  * @ORM\HasLifecycleCallbacks
@@ -93,7 +93,7 @@ class SystemLogs
      */
     public function doPreUpdateHook()
     {
-        $this->hashsum = $this->setHashsum();
+        $this->setHashsum();
     }
 
     /**

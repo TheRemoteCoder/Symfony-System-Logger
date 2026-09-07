@@ -15,7 +15,6 @@ use function uniqid;
 /**
  * Test system logger via command.
  *
- * @todo Demo code - Remove once implemented and tested
  * @example ./bin/console test:systemlogs
  * @package App\Command
  */
@@ -73,7 +72,10 @@ class SystemLogsTestCommand extends Command
         /** @var $rep App\Repository\SystemLogsRepository */
         $rep   = $this->em->getRepository(SystemLogs::class);
         $item = $rep->getLast();
+
         $data = $rep->findByHashsum($item->getHashsum());
+
+        // @todo WIP: Work with $data …
 
         $output->writeln('END');
     }

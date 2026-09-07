@@ -26,7 +26,7 @@ Use cases
 ### Concepts
 
 - Log messages can go into certain channels, like with the CLI loggers (define your own)
-- Log messages are hashed and hashsums stored, so that duplicates can later be found/ filtered
+- Log messages are hashed and hashsum stored, so that duplicates can later be found/ filtered
 
 ## Setup
 
@@ -40,6 +40,7 @@ Use cases
 1. Implement in your Symfony application
 2. Update Doctrine schema
 3. Test via command `./bin/console test:systemlogs`
+4. Check `@todo` comments – Implement features as needed
 
 ## Todo
 
